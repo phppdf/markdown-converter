@@ -1,0 +1,9 @@
+parameters:
+  tmpDir: .phpstan-tmp/
+  level: max
+  paths:
+    - src/
+    - tests/
+  excludePaths:
+    - tests/benchmarks/
+  treatPhpDocTypesAsCertain: false

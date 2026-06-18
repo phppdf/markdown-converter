@@ -1,0 +1,16 @@
+baseURL = "https://phppdf.github.io/markdown-converter/"
+languageCode = "en-us"
+title = "markdown-converter"
+theme = "phppdf-docs"
+
+[params]
+  tagline = "Convert HTML and CSS into PDF documents on top of phppdf"
+  sourceURL = "https://github.com/phppdf/markdown-converter"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.highlight]
+  style = "github-dark"
+  noClasses = true
+  lineNos = false

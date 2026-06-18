@@ -1,0 +1,12 @@
+/.claude
+/.idea
+/.phpbench-report
+/.phpcs.cache
+/.phpstan-tmp
+/.phpunit.cache
+/.phpunit-coverage
+/vendor
+/docs/public
+/docs/resources
+/docs/.hugo_build.lock
+*.pdf

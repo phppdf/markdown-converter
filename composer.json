@@ -1,0 +1,52 @@
+{
+    "name": "phppdf/markdown-converter",
+    "description": "Convert Markdown into PDF documents on top of phppdf/phppdf",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PhpPdf\\Markdown\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PhpPdf\\Markdown\\": [
+                "tests/benchmarks/",
+                "tests/unit/"
+            ]
+        }
+    },
+    "require": {
+        "php": ">=8.4",
+        "phppdf/phppdf": "@dev"
+    },
+    "require-dev": {
+        "phpbench/phpbench": "^1.7",
+        "phppdf/coding-standard": "dev-master",
+        "phpstan/phpstan": "^2.1",
+        "phpstan/phpstan-deprecation-rules": "^2.0",
+        "phpstan/phpstan-phpunit": "^2.0",
+        "phpstan/phpstan-strict-rules": "^2.0",
+        "phpunit/phpunit": "^13.1"
+    },
+    "scripts": {
+        "phpbench": "php vendor/bin/phpbench run --report=default --output=html-report",
+        "phpcbf": "php vendor/bin/phpcbf",
+        "phpcs": "php vendor/bin/phpcs -s",
+        "phpstan": "php vendor/bin/phpstan --memory-limit=256M analyze",
+        "phpunit": "php vendor/bin/phpunit --display-deprecations",
+        "phpunit:coverage": "XDEBUG_MODE=coverage php vendor/bin/phpunit --coverage-html .phpunit-coverage --display-deprecations"
+    },
+    "authors": [
+        {
+            "name": "Walter Tamboer",
+            "role": "Maintainer",
+            "homepage": "https://waltertamboer.nl"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        },
+        "sort-packages": true
+    }
+}
